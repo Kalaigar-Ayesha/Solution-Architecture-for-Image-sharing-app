@@ -1,0 +1,59 @@
+.root-font { font-family: Arial, sans-serif; }
+
+body {
+  font-family: Arial, sans-serif;
+  /* Background: local image (assets/bg.jpg) with a pleasant gradient fallback. */
+  /* background-image: linear-gradient(120deg, rgba(255,255,255,0.9), rgba(245,245,255,0.9)), url('background.jpg'); */
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  /* `background-attachment: fixed` keeps the background steady on scroll */
+  background-attachment: fixed;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.container {
+  /* Make the content panel slightly translucent so the background shows through */
+  background-color: rgba(255, 255, 255, 0.92);
+  padding: 20px 40px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.12);
+  text-align: center;
+  width: 90%;
+  max-width: 500px;
+}
+
+#imagesContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+#imagesContainer img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+button {
+  padding: 10px 20px;
+  margin-top: 10px;
+  border: none;
+  background-color: #0073e6;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #005bb5;
+}
